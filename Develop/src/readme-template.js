@@ -1,7 +1,7 @@
 const badgeHandler = licenseArr => {
     let badgeArr = [];
     for (let i = 0; i < licenseArr.length; i++){
-        let newbadge = 'https://img.shields.io/badge/License-${' + licenseArr[i] + '}-blue';
+        let newbadge = '![GitHub All Releases](https://img.shields.io/badge/License-' + licenseArr[i] + '-blue)';
         badgeArr.push(newbadge);
     }
     return badgeArr.join(' ');
@@ -48,7 +48,9 @@ ${tests}
 
 ## Questions
 If you have any further questions about this project contact me via:
+
 GitHub: [${github}](github.com/${github})
+
 or my email: ${email}
 `;
 }
