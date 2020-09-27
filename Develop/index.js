@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 
-const generateReadMe = require('./src/readme-template');
+const generateReadMe = require('./src/readme-template.js');
+
+const {writeFile} = require('./utils/generateMarkdown.js');
 
 const promptQuestionInfo = () => {
     console.log("======Contact Info======");
@@ -136,9 +138,6 @@ const promptProjectInfo = readmeData => {
         return readmeData;
     })
 }
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 function init() {
@@ -156,7 +155,13 @@ promptQuestionInfo()
         return generateReadMe(readmeData);
     })
     .then(readmeText => {
-        console.log(readmeText);
+        return writeFile(readmeText);
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse);
+    })
+    .catch(err => {
+        console.log(err);
     })
 }
 

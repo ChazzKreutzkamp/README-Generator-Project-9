@@ -1,11 +1,13 @@
-const badgeHandler = badgeArr => {
-    badgeArr.forEach(element => {
-        console.log(element);
-    })
-    // return `https://img.shields.io/badge/License-${element}-blue`
+const badgeHandler = licenseArr => {
+    let badgeArr = [];
+    for (let i = 0; i < licenseArr.length; i++){
+        let newbadge = 'https://img.shields.io/badge/License-${' + licenseArr[i] + '}-blue';
+        badgeArr.push(newbadge);
+    }
+    return badgeArr.join(' ');
 }
 const licenseHandler = licenseArr => {
-    return licenseArr.toString();
+    return licenseArr.join(', ');
 }
 module.exports = readmeData => {
     const {github, email, projectInfo} = readmeData;
