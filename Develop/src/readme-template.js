@@ -1,11 +1,52 @@
-
-
-
-
+const badgeHandler = badgeArr => {
+    badgeArr.forEach(element => {
+        console.log(element);
+    })
+    // return `https://img.shields.io/badge/License-${element}-blue`
+}
+const licenseHandler = licenseArr => {
+    return licenseArr.toString();
+}
 module.exports = readmeData => {
-    const {github, email, ...projectInfo} = readmeData;
-    console.log(github);
-    console.log(email);
-    console.log(projectInfo);
-    return ``;
+    const {github, email, projectInfo} = readmeData;
+    const projectInfoObject = projectInfo[0];
+    const {title, description, installation, usage, contribution, tests, license} = projectInfoObject;
+    return `
+# ${title}
+
+${badgeHandler(license)}
+
+## Description
+${description}
+
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## License
+Licenses used in the project: ${licenseHandler(license)}
+
+## Contributing
+${contribution}
+    
+
+## Tests
+${tests}
+
+## Questions
+If you have any further questions about this project contact me via:
+GitHub: [${github}](github.com/${github})
+or my email: ${email}
+`;
 }

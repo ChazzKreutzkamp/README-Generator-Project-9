@@ -43,6 +43,20 @@ const promptProjectInfo = readmeData => {
     return inquirer.prompt ([
         {
             type: 'input',
+            name: 'title',
+            message: 'Please provide the name of your project.',
+            validate: (titleInput) => {
+                if (titleInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please povide the name of your project.')
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'description',
             message: 'Please provide a description of your project.',
             validate: (descriptionInput) => {
@@ -99,7 +113,7 @@ const promptProjectInfo = readmeData => {
         },
         {
             type: 'input',
-            name: 'description',
+            name: 'tests',
             message: 'Please provide test instructions for your project.',
             validate: (descriptionInput) => {
                 if (descriptionInput) {
@@ -140,6 +154,9 @@ promptQuestionInfo()
     .then(promptProjectInfo)
     .then(readmeData => {
         return generateReadMe(readmeData);
+    })
+    .then(readmeText => {
+        console.log(readmeText);
     })
 }
 
