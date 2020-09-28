@@ -2,7 +2,7 @@
 
 ## Description
 
-This Application is designed to help you create your next README.md file and make it look professional. The application utilizes node so, all you have to do is clone the repository and from there you run an install in the commandline and then you are good to make your README.md file. The application asks you questions about your project such as providing the application with information that describes the project and lisence information, in addition it will ask you about contact information like your GitHub username and email. From your answers the application will then generate a README.md file that will ne perfect for your next project.
+This Application is designed to help you create your next README.md file and make it look professional. The application utilizes node so, all you have to do is clone the repository and from there you run an install in the commandline and then you are good to make your README.md file. The application asks you questions about your project such as providing the application with information that describes the project and lisence information, in addition it will ask you about contact information like your GitHub username and email. From your answers the application will then generate a README.md file that will be perfect for your next project.
 
 ## How to use the Node/Javascript Application
 
