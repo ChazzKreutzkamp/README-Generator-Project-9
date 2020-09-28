@@ -37,7 +37,7 @@ ${installation}
 ${usage}
 
 ## License
-Licenses used in the project: ${licenseHandler(license)}
+Licensed Under: ${licenseHandler(license)}
 
 ## Contributing
 ${contribution}
@@ -49,7 +49,7 @@ ${tests}
 ## Questions
 If you have any further questions about this project contact me via:
 
-GitHub: [${github}](github.com/${github})
+GitHub: [${github}](http://github.com/${github})
 
 or my email: ${email}
 `;
