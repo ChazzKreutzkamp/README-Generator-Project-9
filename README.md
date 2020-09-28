@@ -14,4 +14,4 @@ Link to a video that shows the application in action:
 
 # Image of the Application in action and what it generates:
 
-![al text](https://github.com/ChazzKreutzkamp/README-Genrator-Project-9/blob/master/project_resources/example_picture.JPG)
+![al text](https://github.com/ChazzKreutzkamp/README-Generator-Project-9/blob/master/project resources/readme-guide.md)
