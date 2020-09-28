@@ -11,7 +11,7 @@ Steps to use the application
 * Step Two: Utilizing the commandline make sure you run the code "npm install" as this project does utilize inquirer.
 * Step Three: Make sure you are in the Develop folder! The Develop folder holds the index.js file that runs all the code.
 * Step Four: If you are in the develop directory you can run "node index" in the command line and the application will then run.
-* Step Five: The Code will give you some instruction, but ultimately the all you need to do from this point is answer the prompts (all prompts are required so you cannot leave a question blank, and yes, there is error handling to insure that you answer each question).
+* Step Five: The Code will give you some instruction, but ultimately, all you need to do from this point is answer the prompts (all prompts are required so you cannot leave a question blank, and yes, there is error handling to insure that you answer each question).
 * Step Six: When the code indicates that the README.md file has been created it's location is held within the dist folder.
 * Step Seven: Enjoy your new README.md file!
 
